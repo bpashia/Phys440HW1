@@ -2,7 +2,7 @@
 //  Tests_macOS.swift
 //  Tests macOS
 //
-//  Created by Jeff Terry on 11/28/20.
+//  Created by Broc Pashia on 1/21/22
 //
 
 import XCTest
@@ -31,107 +31,35 @@ class Tests_macOS: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testCircleInitialization() async {
+    func testSphereInitialization() async {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         let radius = 1.0
         
-        let myCircle = Circle()
+        let mySphere = Sphere()
         
-        let _ = await myCircle.initWithRadius(passedRadius: radius)
+        let _ = await mySphere.initWithRadius(radius: radius)
         
-        let area = myCircle.area
+        let volume = mySphere.volume
         
-        XCTAssertEqual(area, Double.pi, accuracy: 1.0E-7, "Was not equal to this resolution.")
+        XCTAssertEqual(volume, 4.0/3.0 * Double.pi, accuracy: 1.0E-7, "Was not equal to this resolution.")
         
-        let perimeter = myCircle.perimeter
+        let surfaceArea = mySphere.surfaceArea
         
-        XCTAssertEqual(perimeter, 2.0*Double.pi, accuracy: 1.0E-7, "Was not equal to this resolution.")
+        XCTAssertEqual(surfaceArea, 4.0*Double.pi, accuracy: 1.0E-7, "Was not equal to this resolution.")
         
+        let boundingBoxVolume = mySphere.boundingBox.volume
         
-    }
-    
-    func testCircleArea() async {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssertEqual(boundingBoxVolume,8.0, accuracy: 1.0E-7, "Was not equal to this resolution.")
         
-        let myCircle = Circle()
+        let boundingBoxSurfaceArea = mySphere.boundingBox.surfaceArea
         
-        let radius = 1.0
-        
-        let area = await myCircle.calculateArea(majorAxis: radius, minorAxis: radius)
-        
-        XCTAssertEqual(area, Double.pi, accuracy: 1.0E-7, "Was not equal to this resolution.")
+        XCTAssertEqual(boundingBoxSurfaceArea, 24.0*Double.pi, accuracy: 1.0E-7, "Was not equal to this resolution.")
         
         
     }
-    
-    func testCirclePerimeter() async {
-        
-        let myCircle = Circle()
-        
-        let radius = 1.0
-        
-        let perimeter = await myCircle.calculatePerimeter(majorAxis: radius, minorAxis: radius)
-        
-        
-        XCTAssertEqual(perimeter, 2.0*Double.pi, accuracy: 1.0E-7, "Was not equal to this resolution.")
-        
-        
-        
-    }
-    
-    func testEllipseInitialization() async {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
-        let myEllipse = Ellipse()
-        
-        let majorAxis = 3.0
-        let minorAxis = 2.0
-        
-        let _ = await myEllipse.initWithAxis(majorAxis: majorAxis, minorAxis: minorAxis)
-        
-        let area = myEllipse.area
-        
-        XCTAssertEqual(area, 6.0*Double.pi, accuracy: 1.0E-7,"Was not equal to the resolution.")
-        
-        let perimeter = myEllipse.perimeter
-        
-        XCTAssertEqual(perimeter, 15.865439526701, accuracy: 1.0E-7, "Was not equal to the resolution." )
-        
-        
-    }
-    
-    
-    func testEllipseArea() async {
-        
-        let myEllipse = Ellipse()
-        
-        let majorAxis = 3.0
-        let minorAxis = 2.0
-        
-        let area = await myEllipse.calculateArea(majorAxis: majorAxis, minorAxis: minorAxis)
-        
-        XCTAssertEqual(area, 6.0*Double.pi, accuracy: 1.0E-7,"Was not equal to the resolution.")
-        
-        
-    }
-    
-    
-     func testEllipsePerimeter() async {
-            
-        let myEllipse = Ellipse()
-                
-        let majorAxis = 3.0
-        let minorAxis = 2.0
-                
-        let perimeter = await myEllipse.calculatePerimeter(majorAxis: majorAxis, minorAxis: minorAxis)
-                
-        XCTAssertEqual(perimeter, 15.865439526701, accuracy: 1.0E-7, "Was not equal to the resolution." )
-                
-        }
+
     
 
     
