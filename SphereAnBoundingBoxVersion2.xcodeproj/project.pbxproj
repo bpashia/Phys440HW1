@@ -9,20 +9,12 @@
 /* Begin PBXBuildFile section */
 		D20D7663257356CC00789F04 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7662257356CC00789F04 /* Tests_iOS.swift */; };
 		D20D766E257356CC00789F04 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D766D257356CC00789F04 /* Tests_macOS.swift */; };
-		D20D7670257356CC00789F04 /* Circle_With_Unit_TestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7647257356C900789F04 /* Circle_With_Unit_TestsApp.swift */; };
-		D20D7671257356CC00789F04 /* Circle_With_Unit_TestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7647257356C900789F04 /* Circle_With_Unit_TestsApp.swift */; };
+		D20D7670257356CC00789F04 /* SphereAndBoundingBoxVersion2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7647257356C900789F04 /* SphereAndBoundingBoxVersion2.swift */; };
+		D20D7671257356CC00789F04 /* SphereAndBoundingBoxVersion2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7647257356C900789F04 /* SphereAndBoundingBoxVersion2.swift */; };
 		D20D7672257356CC00789F04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7648257356C900789F04 /* ContentView.swift */; };
 		D20D7673257356CC00789F04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7648257356C900789F04 /* ContentView.swift */; };
 		D20D7674257356CC00789F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20D7649257356CB00789F04 /* Assets.xcassets */; };
 		D20D7675257356CC00789F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20D7649257356CB00789F04 /* Assets.xcassets */; };
-		D20D7692257357C500789F04 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7691257357C400789F04 /* Circle.swift */; };
-		D20D7693257357C500789F04 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7691257357C400789F04 /* Circle.swift */; };
-		D20D7699257357E000789F04 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7698257357E000789F04 /* Ellipse.swift */; };
-		D20D769A257357E000789F04 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7698257357E000789F04 /* Ellipse.swift */; };
-		D2E6E1CC2573837100045654 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7691257357C400789F04 /* Circle.swift */; };
-		D2E6E1CD2573837100045654 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7698257357E000789F04 /* Ellipse.swift */; };
-		D2E6E1D22573837200045654 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7691257357C400789F04 /* Circle.swift */; };
-		D2E6E1D32573837200045654 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7698257357E000789F04 /* Ellipse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D20D7647257356C900789F04 /* Circle_With_Unit_TestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle_With_Unit_TestsApp.swift; sourceTree = "<group>"; };
+		D20D7647257356C900789F04 /* SphereAndBoundingBoxVersion2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphereAndBoundingBoxVersion2.swift; sourceTree = "<group>"; };
 		D20D7648257356C900789F04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D20D7649257356CB00789F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D20D764E257356CB00789F04 /* Circle With Unit Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circle With Unit Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20D764E257356CB00789F04 /* SphereAnBoundingBoxVersion2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SphereAnBoundingBoxVersion2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20D7651257356CB00789F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D20D7656257356CB00789F04 /* Circle With Unit Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circle With Unit Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20D7656257356CB00789F04 /* SphereAnBoundingBoxVersion2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SphereAnBoundingBoxVersion2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20D7658257356CB00789F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20D7659257356CB00789F04 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		D20D765E257356CC00789F04 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,9 +49,7 @@
 		D20D7669257356CC00789F04 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20D766D257356CC00789F04 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D20D766F257356CC00789F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D20D7691257357C400789F04 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
-		D20D7698257357E000789F04 /* Ellipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ellipse.swift; sourceTree = "<group>"; };
-		D2A28B3C25BBB141006EF348 /* Circle With Unit Tests.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Circle With Unit Tests.entitlements"; sourceTree = "<group>"; };
+		D2A28B3C25BBB141006EF348 /* SphereAnBoundingBoxVersion2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SphereAnBoundingBoxVersion2.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +87,7 @@
 		D20D7641257356C900789F04 = {
 			isa = PBXGroup;
 			children = (
-				D2A28B3C25BBB141006EF348 /* Circle With Unit Tests.entitlements */,
+				D2A28B3C25BBB141006EF348 /* SphereAnBoundingBoxVersion2.entitlements */,
 				D20D7646257356C900789F04 /* Shared */,
 				D20D7650257356CB00789F04 /* iOS */,
 				D20D7657257356CB00789F04 /* macOS */,
@@ -110,10 +100,8 @@
 		D20D7646257356C900789F04 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				D20D7647257356C900789F04 /* Circle_With_Unit_TestsApp.swift */,
+				D20D7647257356C900789F04 /* SphereAndBoundingBoxVersion2.swift */,
 				D20D7648257356C900789F04 /* ContentView.swift */,
-				D20D7698257357E000789F04 /* Ellipse.swift */,
-				D20D7691257357C400789F04 /* Circle.swift */,
 				D20D7649257356CB00789F04 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -122,8 +110,8 @@
 		D20D764F257356CB00789F04 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D20D764E257356CB00789F04 /* Circle With Unit Tests.app */,
-				D20D7656257356CB00789F04 /* Circle With Unit Tests.app */,
+				D20D764E257356CB00789F04 /* SphereAnBoundingBoxVersion2.app */,
+				D20D7656257356CB00789F04 /* SphereAnBoundingBoxVersion2.app */,
 				D20D765E257356CC00789F04 /* Tests iOS.xctest */,
 				D20D7669257356CC00789F04 /* Tests macOS.xctest */,
 			);
@@ -168,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D20D764D257356CB00789F04 /* Circle With Unit Tests (iOS) */ = {
+		D20D764D257356CB00789F04 /* SphereAnBoundingBoxVersion2 (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D20D7678257356CC00789F04 /* Build configuration list for PBXNativeTarget "Circle With Unit Tests (iOS)" */;
+			buildConfigurationList = D20D7678257356CC00789F04 /* Build configuration list for PBXNativeTarget "SphereAnBoundingBoxVersion2 (iOS)" */;
 			buildPhases = (
 				D20D764A257356CB00789F04 /* Sources */,
 				D20D764B257356CB00789F04 /* Frameworks */,
@@ -180,14 +168,14 @@
 			);
 			dependencies = (
 			);
-			name = "Circle With Unit Tests (iOS)";
+			name = "SphereAnBoundingBoxVersion2 (iOS)";
 			productName = "Circle With Unit Tests (iOS)";
-			productReference = D20D764E257356CB00789F04 /* Circle With Unit Tests.app */;
+			productReference = D20D764E257356CB00789F04 /* SphereAnBoundingBoxVersion2.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D20D7655257356CB00789F04 /* Circle With Unit Tests (macOS) */ = {
+		D20D7655257356CB00789F04 /* SphereAnBoundingBoxVersion2 (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D20D767B257356CC00789F04 /* Build configuration list for PBXNativeTarget "Circle With Unit Tests (macOS)" */;
+			buildConfigurationList = D20D767B257356CC00789F04 /* Build configuration list for PBXNativeTarget "SphereAnBoundingBoxVersion2 (macOS)" */;
 			buildPhases = (
 				D20D7652257356CB00789F04 /* Sources */,
 				D20D7653257356CB00789F04 /* Frameworks */,
@@ -197,9 +185,9 @@
 			);
 			dependencies = (
 			);
-			name = "Circle With Unit Tests (macOS)";
+			name = "SphereAnBoundingBoxVersion2 (macOS)";
 			productName = "Circle With Unit Tests (macOS)";
-			productReference = D20D7656257356CB00789F04 /* Circle With Unit Tests.app */;
+			productReference = D20D7656257356CB00789F04 /* SphereAnBoundingBoxVersion2.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D20D765D257356CB00789F04 /* Tests iOS */ = {
@@ -263,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D20D7645257356C900789F04 /* Build configuration list for PBXProject "Circle With Unit Tests" */;
+			buildConfigurationList = D20D7645257356C900789F04 /* Build configuration list for PBXProject "SphereAnBoundingBoxVersion2" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -276,8 +264,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D20D764D257356CB00789F04 /* Circle With Unit Tests (iOS) */,
-				D20D7655257356CB00789F04 /* Circle With Unit Tests (macOS) */,
+				D20D764D257356CB00789F04 /* SphereAnBoundingBoxVersion2 (iOS) */,
+				D20D7655257356CB00789F04 /* SphereAnBoundingBoxVersion2 (macOS) */,
 				D20D765D257356CB00789F04 /* Tests iOS */,
 				D20D7668257356CC00789F04 /* Tests macOS */,
 			);
@@ -323,9 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20D7672257356CC00789F04 /* ContentView.swift in Sources */,
-				D20D7670257356CC00789F04 /* Circle_With_Unit_TestsApp.swift in Sources */,
-				D20D7699257357E000789F04 /* Ellipse.swift in Sources */,
-				D20D7692257357C500789F04 /* Circle.swift in Sources */,
+				D20D7670257356CC00789F04 /* SphereAndBoundingBoxVersion2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,9 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20D7673257356CC00789F04 /* ContentView.swift in Sources */,
-				D20D7671257356CC00789F04 /* Circle_With_Unit_TestsApp.swift in Sources */,
-				D20D769A257357E000789F04 /* Ellipse.swift in Sources */,
-				D20D7693257357C500789F04 /* Circle.swift in Sources */,
+				D20D7671257356CC00789F04 /* SphereAndBoundingBoxVersion2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,9 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2E6E1CD2573837100045654 /* Ellipse.swift in Sources */,
 				D20D7663257356CC00789F04 /* Tests_iOS.swift in Sources */,
-				D2E6E1CC2573837100045654 /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,9 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2E6E1D32573837200045654 /* Ellipse.swift in Sources */,
 				D20D766E257356CC00789F04 /* Tests_macOS.swift in Sources */,
-				D2E6E1D22573837200045654 /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,12 +345,12 @@
 /* Begin PBXTargetDependency section */
 		D20D7660257356CC00789F04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D20D764D257356CB00789F04 /* Circle With Unit Tests (iOS) */;
+			target = D20D764D257356CB00789F04 /* SphereAnBoundingBoxVersion2 (iOS) */;
 			targetProxy = D20D765F257356CC00789F04 /* PBXContainerItemProxy */;
 		};
 		D20D766B257356CC00789F04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D20D7655257356CB00789F04 /* Circle With Unit Tests (macOS) */;
+			target = D20D7655257356CB00789F04 /* SphereAnBoundingBoxVersion2 (macOS) */;
 			targetProxy = D20D766A257356CC00789F04 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -503,7 +483,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiiit.Circle-With-Unit-Tests";
-				PRODUCT_NAME = "Circle With Unit Tests";
+				PRODUCT_NAME = SphereAnBoundingBoxVersion2;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -527,7 +507,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiiit.Circle-With-Unit-Tests";
-				PRODUCT_NAME = "Circle With Unit Tests";
+				PRODUCT_NAME = SphereAnBoundingBoxVersion2;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -555,7 +535,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiiit.Circle-With-Unit-Tests";
-				PRODUCT_NAME = "Circle With Unit Tests";
+				PRODUCT_NAME = SphereAnBoundingBoxVersion2;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -580,7 +560,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiiit.Circle-With-Unit-Tests";
-				PRODUCT_NAME = "Circle With Unit Tests";
+				PRODUCT_NAME = SphereAnBoundingBoxVersion2;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -678,7 +658,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D20D7645257356C900789F04 /* Build configuration list for PBXProject "Circle With Unit Tests" */ = {
+		D20D7645257356C900789F04 /* Build configuration list for PBXProject "SphereAnBoundingBoxVersion2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D20D7676257356CC00789F04 /* Debug */,
@@ -687,7 +667,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D20D7678257356CC00789F04 /* Build configuration list for PBXNativeTarget "Circle With Unit Tests (iOS)" */ = {
+		D20D7678257356CC00789F04 /* Build configuration list for PBXNativeTarget "SphereAnBoundingBoxVersion2 (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D20D7679257356CC00789F04 /* Debug */,
@@ -696,7 +676,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D20D767B257356CC00789F04 /* Build configuration list for PBXNativeTarget "Circle With Unit Tests (macOS)" */ = {
+		D20D767B257356CC00789F04 /* Build configuration list for PBXNativeTarget "SphereAnBoundingBoxVersion2 (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D20D767C257356CC00789F04 /* Debug */,

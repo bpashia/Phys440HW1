@@ -11,29 +11,33 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var radiusString = "5.0"
+    @State var radiusString = "0.0"
     
-    var body: some View {
-        let rad = 5.0;
-        let volume = (4.0/3.0)*Double.pi*pow(rad,3)
-        let sphereSurfaceArea = 4.0*Double.pi*pow(rad,2)
-        let boundingBoxVolume = pow(2*rad,3)
-        let boundingBoxSurfaceArea = pow(2*rad,2)*6
+    @State var sphereVolume:Double = 0.0
+    @State var sphereSurfaceArea:Double = 0.0
+    @State var boundingBoxVolume:Double = 0.0
+    @State var boundingBoxSurfaceArea:Double = 0.0
+    
+   var body: some View {
+        
+        
         
         VStack{
-            Text("Radius")
+            Text("Radius").underline()
                 .padding(.top)
                 .padding(.bottom, 0)
-            Text("\(rad, specifier: "%.2f")")
-                .padding(.horizontal)
-                .frame(width: 100)
-                .padding(.top, 0)
-                .padding(.bottom,30)
+               
+            TextField("Enter Radius", text: $radiusString, onCommit: {Task.init {await self.calculateSphere()}})
+                            .padding(.horizontal)
+                            .frame(width: 100)
+                            .border(.secondary)
+                            .padding(.top, 0)
+                            .padding(.bottom, 30)
             HStack {
                 VStack{
-            Text("Sphere Volume")
+            Text("Sphere Volume").underline()
                 .padding(.bottom, 0)
-            Text("\(volume, specifier: "%.2f")")
+            Text("\(sphereVolume, specifier: "%.2f")")
                 .padding(.horizontal)
                 .frame(width: 100)
                 .padding(.top, 0)
@@ -41,7 +45,7 @@ struct ContentView: View {
             
         }
         VStack{
-            Text("Sphere S.A.")
+            Text("Sphere S.A.").underline()
                 .padding(.bottom, 0)
             Text("\(sphereSurfaceArea, specifier: "%.2f")")
                 .padding(.horizontal)
@@ -53,7 +57,7 @@ struct ContentView: View {
             }
             HStack {
                 VStack{
-            Text("Bounding Box Volume")
+            Text("Bounding Box Volume").underline()
                 .padding(.bottom, 0)
             Text("\(boundingBoxVolume, specifier: "%.2f")")
                 .padding(.horizontal)
@@ -63,7 +67,7 @@ struct ContentView: View {
             
         }
         VStack{
-            Text("Bounding Box S.A.")
+            Text("Bounding Box S.A.").underline()
                 .padding(.bottom, 0)
             Text("\(boundingBoxSurfaceArea, specifier: "%.2f")")
                 .padding(.horizontal)
@@ -74,26 +78,28 @@ struct ContentView: View {
             }
             }
             
-//            Button("Calculate", action: {Task.init { await self.calculateCircle()}})
-//                .padding(.bottom)
-//                .padding()
-//                .disabled(circleModel.enableButton == false)
+            Button("Calculate", action: {Task.init { await self.calculateSphere()}})
+                .padding(.bottom)
+                .padding()
+                
             
             
         }
         
     }
     
-//    func calculateCircle() async {
+    func calculateSphere() async {
+        let rad: Double = Double(radiusString) ?? 0.0
+        sphereVolume = (4.0/3.0)*Double.pi*pow(rad,3)
+         sphereSurfaceArea = 4.0*Double.pi*pow(rad,2)
+         boundingBoxVolume = pow(2*rad,3)
+         boundingBoxSurfaceArea = pow(2*rad,2)*6
         
-//        circleModel.setButtonEnable(state: false)
-        
-//        let _ : Bool = await circleModel.initWithRadius(passedRadius: Double(radiusString)!)
         
         
     
 
-//}
+}
     
 }
 
