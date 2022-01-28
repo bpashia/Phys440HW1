@@ -4,14 +4,13 @@
 //
 //  Created by Broc Pashia on 01/21/22.
 //
-//1st Version with code written poorly and radius hard coded to 5.0
+//  1st Version with code written poorly and radius hard coded to 5.0
 //
 
 import SwiftUI
 
 struct ContentView: View {
     
-    @State var radiusString = "5.0"
     
     var body: some View {
         let rad = 5.0;
@@ -74,26 +73,14 @@ struct ContentView: View {
             }
             }
             
-//            Button("Calculate", action: {Task.init { await self.calculateCircle()}})
-//                .padding(.bottom)
-//                .padding()
-//                .disabled(circleModel.enableButton == false)
+
             
             
         }
         
     }
     
-//    func calculateCircle() async {
-        
-//        circleModel.setButtonEnable(state: false)
-        
-//        let _ : Bool = await circleModel.initWithRadius(passedRadius: Double(radiusString)!)
-        
-        
-    
 
-//}
     
 }
 

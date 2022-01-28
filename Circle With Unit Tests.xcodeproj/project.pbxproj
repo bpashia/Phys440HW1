@@ -15,14 +15,6 @@
 		D20D7673257356CC00789F04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7648257356C900789F04 /* ContentView.swift */; };
 		D20D7674257356CC00789F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20D7649257356CB00789F04 /* Assets.xcassets */; };
 		D20D7675257356CC00789F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20D7649257356CB00789F04 /* Assets.xcassets */; };
-		D20D7692257357C500789F04 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7691257357C400789F04 /* Circle.swift */; };
-		D20D7693257357C500789F04 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7691257357C400789F04 /* Circle.swift */; };
-		D20D7699257357E000789F04 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7698257357E000789F04 /* Ellipse.swift */; };
-		D20D769A257357E000789F04 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7698257357E000789F04 /* Ellipse.swift */; };
-		D2E6E1CC2573837100045654 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7691257357C400789F04 /* Circle.swift */; };
-		D2E6E1CD2573837100045654 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7698257357E000789F04 /* Ellipse.swift */; };
-		D2E6E1D22573837200045654 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7691257357C400789F04 /* Circle.swift */; };
-		D2E6E1D32573837200045654 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D7698257357E000789F04 /* Ellipse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +49,6 @@
 		D20D7669257356CC00789F04 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20D766D257356CC00789F04 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D20D766F257356CC00789F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D20D7691257357C400789F04 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
-		D20D7698257357E000789F04 /* Ellipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ellipse.swift; sourceTree = "<group>"; };
 		D2A28B3C25BBB141006EF348 /* Circle With Unit Tests.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Circle With Unit Tests.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,8 +102,6 @@
 			children = (
 				D20D7647257356C900789F04 /* Circle_With_Unit_TestsApp.swift */,
 				D20D7648257356C900789F04 /* ContentView.swift */,
-				D20D7698257357E000789F04 /* Ellipse.swift */,
-				D20D7691257357C400789F04 /* Circle.swift */,
 				D20D7649257356CB00789F04 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -324,8 +312,6 @@
 			files = (
 				D20D7672257356CC00789F04 /* ContentView.swift in Sources */,
 				D20D7670257356CC00789F04 /* Circle_With_Unit_TestsApp.swift in Sources */,
-				D20D7699257357E000789F04 /* Ellipse.swift in Sources */,
-				D20D7692257357C500789F04 /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,8 +321,6 @@
 			files = (
 				D20D7673257356CC00789F04 /* ContentView.swift in Sources */,
 				D20D7671257356CC00789F04 /* Circle_With_Unit_TestsApp.swift in Sources */,
-				D20D769A257357E000789F04 /* Ellipse.swift in Sources */,
-				D20D7693257357C500789F04 /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,9 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2E6E1CD2573837100045654 /* Ellipse.swift in Sources */,
 				D20D7663257356CC00789F04 /* Tests_iOS.swift in Sources */,
-				D2E6E1CC2573837100045654 /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,9 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2E6E1D32573837200045654 /* Ellipse.swift in Sources */,
 				D20D766E257356CC00789F04 /* Tests_macOS.swift in Sources */,
-				D2E6E1D22573837200045654 /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
