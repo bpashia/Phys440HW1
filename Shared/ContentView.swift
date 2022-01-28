@@ -2,32 +2,38 @@
 //  ContentView.swift
 //  Shared
 //
-//  Created by Jeff Terry on 11/28/20.
+//  Created by Broc Pashia on 01/21/22.
+//
+//1st Version with code written poorly and radius hard coded to 5.0
 //
 
 import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject private var circleModel = Circle()
-    @State var radiusString = "1.0"
+    @State var radiusString = "5.0"
     
     var body: some View {
+        let rad = 5.0;
+        let volume = (4.0/3.0)*Double.pi*pow(rad,3)
+        let sphereSurfaceArea = 4.0*Double.pi*pow(rad,2)
+        let boundingBoxVolume = pow(2*rad,3)
+        let boundingBoxSurfaceArea = pow(2*rad,2)*6
         
         VStack{
             Text("Radius")
                 .padding(.top)
                 .padding(.bottom, 0)
-            TextField("Enter Radius", text: $radiusString, onCommit: {Task.init {await self.calculateCircle()}})
+            Text("\(rad, specifier: "%.2f")")
                 .padding(.horizontal)
                 .frame(width: 100)
                 .padding(.top, 0)
-                .padding(.bottom, 30)
+                .padding(.bottom,30)
             HStack {
                 VStack{
-            Text("Area")
+            Text("Sphere Volume")
                 .padding(.bottom, 0)
-            TextField("", text: $circleModel.areaText)
+            Text("\(volume, specifier: "%.2f")")
                 .padding(.horizontal)
                 .frame(width: 100)
                 .padding(.top, 0)
@@ -35,9 +41,9 @@ struct ContentView: View {
             
         }
         VStack{
-            Text("Area")
+            Text("Sphere S.A.")
                 .padding(.bottom, 0)
-            Text("\(circleModel.area, specifier: "%.2f")")
+            Text("\(sphereSurfaceArea, specifier: "%.2f")")
                 .padding(.horizontal)
                 .frame(width: 100)
                 .padding(.top, 0)
@@ -45,51 +51,49 @@ struct ContentView: View {
                 
             }
             }
-            HStack{
+            HStack {
                 VStack{
-            Text("Perimeter")
+            Text("Bounding Box Volume")
                 .padding(.bottom, 0)
-            TextField("", text: ( $circleModel.perimeterText))
+            Text("\(boundingBoxVolume, specifier: "%.2f")")
                 .padding(.horizontal)
                 .frame(width: 100)
                 .padding(.top, 0)
-                .padding(.bottom, 30)
-                }
-                VStack{
-                    Text("Perimeter")
-                        .padding(.bottom, 0)
-                    Text("\(circleModel.perimeter, specifier: "%.2f")")
-                        .padding(.horizontal)
-                        .frame(width: 100)
-                        .padding(.top, 0)
-                        .padding(.bottom,30)
-                        
-                    }
-
-                
+                .padding(.bottom,30)
+            
+        }
+        VStack{
+            Text("Bounding Box S.A.")
+                .padding(.bottom, 0)
+            Text("\(boundingBoxSurfaceArea, specifier: "%.2f")")
+                .padding(.horizontal)
+                .frame(width: 100)
+                .padding(.top, 0)
+                .padding(.bottom,30)
                 
             }
+            }
             
-            Button("Calculate", action: {Task.init { await self.calculateCircle()}})
-                .padding(.bottom)
-                .padding()
-                .disabled(circleModel.enableButton == false)
+//            Button("Calculate", action: {Task.init { await self.calculateCircle()}})
+//                .padding(.bottom)
+//                .padding()
+//                .disabled(circleModel.enableButton == false)
             
             
         }
         
     }
     
-    func calculateCircle() async {
+//    func calculateCircle() async {
         
-        circleModel.setButtonEnable(state: false) 
+//        circleModel.setButtonEnable(state: false)
         
-        let _ : Bool = await circleModel.initWithRadius(passedRadius: Double(radiusString)!)
+//        let _ : Bool = await circleModel.initWithRadius(passedRadius: Double(radiusString)!)
         
         
     
 
-}
+//}
     
 }
 
